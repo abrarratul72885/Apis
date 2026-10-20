@@ -1,0 +1,53 @@
+APIS - your personal operations hub
+===================================
+Everything stays on your laptop. It costs nothing.
+
+STEP 1: Install Python (one time only, free)
+  1. Go to https://www.python.org/downloads/ and download Python.
+  2. Run the installer. On the FIRST screen, tick "Add python.exe to PATH". Then press Install Now.
+
+STEP 2: Start APIS
+  Double-click "Start APIS". A black window opens (leave it open) and your browser opens APIS.
+  The first time, choose a PIN. You will type it each time you open APIS.
+  If Windows asks about the firewall, press "Allow access" (this lets your phone connect).
+
+STEP 3 (optional): Start APIS by itself
+  Double-click "Start APIS when Windows starts". After that APIS is always ready at
+  http://localhost:8501. To undo it, double-click "Stop starting APIS with Windows".
+
+USING APIS ON YOUR ANDROID PHONE AND TABLET
+  1. Laptop on, APIS running, phone on the same Wi-Fi.
+  2. In APIS on the laptop open Settings and Data. Under "Use APIS on your phone and tablet"
+     you will see an address like http://192.168.0.12:8501
+  3. Type that address into Chrome on the phone or tablet and sign in with your PIN.
+  4. Chrome menu (three dots), then "Install app" or "Add to Home screen". APIS now has its own icon.
+
+YOUR DATA
+  Saved in the "data" folder inside this folder:
+    apis.db       all your records
+    uploads       your photos, logos and PDFs
+    backups       automatic copies, made every few hours
+  GOOGLE DRIVE BACKUP: install "Google Drive for desktop", then in APIS open Settings and Data,
+  paste a folder inside your Google Drive into "Google Drive backup folder", and press
+  "Save and back up now".
+  RESTORE ON A NEW LAPTOP: install Python, unzip APIS, close APIS, then copy the saved
+  "database" and "uploads" folders from your Drive backup into APIS\data\ and start APIS.
+  (The backup also holds apis_data.xlsx, a readable Excel copy of everything.)
+
+EMAIL REPORTS
+  In APIS open Settings and Data, then "Gmail for reports", and follow the 5 short steps for an App Password.
+  Then open Reports and Automation, switch on the automatic daily email and choose the time.
+  The laptop must be on and APIS running at that time.
+
+FORGOT YOUR PIN?
+  Close APIS, then double-click "Reset my PIN" and type a new one. Your records are not touched.
+
+IF SOMETHING GOES WRONG
+  - "Python is not installed": do Step 1 again and remember the PATH tick.
+  - The page does not open: open your browser and type http://localhost:8501
+  - Phone cannot connect: same Wi-Fi? Laptop awake? Firewall allowed?
+  - Details of any error are in data\apis.log
+
+PRIVACY
+  Your PIN protects APIS on your Wi-Fi. Do not store customer ID numbers, account numbers or
+  passwords in APIS. Check every figure against official reports before using it at work.
